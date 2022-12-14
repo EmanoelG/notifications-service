@@ -6,4 +6,4 @@ async function bootstrap() {
   await app.listen(3000);
 }
 bootstrap();
- 
+// parei nos minutp 44 mais o menos, da primeira aula-
