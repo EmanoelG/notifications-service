@@ -11,4 +11,9 @@ datasource db {
 }
 
 
-model Uni
+model Unity{
+  id BigInt @id @default(autoincrement())
+  @@map("unity")
+}
+
+//parei no minuto 53:48
