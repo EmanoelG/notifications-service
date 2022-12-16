@@ -10,10 +10,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model notification {
+  id String @id
+  recipientId String
+  content String
+  category String
+  readAt DateTime?
+  createdAt DateTime @default(now())
 
-model Unity{
-  id BigInt @id @default(autoincrement())
-  @@map("unity")
+  @@index([recipientId])
+  @@map("notification")
 }
-
 //parei no minuto 53:48
